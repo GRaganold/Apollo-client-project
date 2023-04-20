@@ -1,0 +1,95 @@
+name: 🚀 Epic Product
+description: Very general information regarding a potential product that would advance a milestone and be an output after completing it.
+title: "[EPIC] - <insert product name>"
+labels: ["Type: Epic"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This is meant to create a loosely structured space to jot down some ideas/deliverables for a project that you would like the team to work on to advance a milestone.
+  - type: input
+    id: business-client
+    attributes:
+      label: 👱 Business Client
+      description: Any and all projects deserve some credit so let us know who thought of it!
+      placeholder: ex, FirstName LastName
+    validations:
+      required: true
+  - type: dropdown
+    id: milestone
+    attributes:
+      label: 🎯 Milestone
+      description: What milestone will this product help advance or be an output from?
+      multiple: false
+      options:
+        - M1 - Establish a governance Secretariat
+        - M2 - Develop Strategic Plan
+        - M3 - Engage Digital ID Lab and Digital Governance Council
+        - M4 - Develop a Cloud Adoption Framework
+        - M5 - Deploy an interoperability (API) platform
+        - M6 - Define a technology engagement framework
+        - M7 - Implementation of an identity-based (Zero-Trust) security model
+        - M8 - Deploy PBMM-ready Cloud Infrastructure for Public Health Intelligence (CIPHI)
+        - M9 - Deliver data mesh recommendations
+        - M10 - Provide PHAC-designed production-ready data analytics capabilities
+        - N/A
+    validations:
+      required: true
+  - type: input
+    id: start-date
+    attributes:
+      label: 🟢 Start Date (expected)
+      description: Optional field to store what the expected start date is
+      placeholder: dd-mm-yyyy
+    validations:
+      required: false
+  - type: input
+    id: end-date
+    attributes:
+      label: 🔴 End Date (expected)
+      description: Optional field to store what the expected end date is
+      placeholder: dd-mm-yyyy
+    validations:
+      required: false
+  - type: textarea
+    id: detailed-description
+    attributes:
+      label: 📋 Detailed Description
+      description: Please provide some more detail to the description of the product.
+      placeholder: Lets get some more details! Give us a longer description here.
+    validations:
+      required: true
+  - type: textarea
+    id: tangible-outcomes
+    attributes:
+      label: ⚒️ Tangible Outcomes
+      description: Please list some tangible outcomes of this project
+      placeholder: (ex; a new platform, new configuration, new document, etc.)
+    validations:
+      required: true
+  - type: textarea
+    id: intangible-outcomes
+    attributes:
+      label: 👨‍💻 Intangible Outcomes
+      description: Please list some intangible outcomes of this project
+      placeholder: (ex; lessons learned, experience to the team, engagement opprotunities, etc.)
+    validations:
+      required: true
+  - type: textarea
+    id: proposed-features
+    attributes:
+      label: ✔️ Feature List
+      description: What are some basic functions that this product will need?
+      placeholder: Create a list of checkboxes, in the following format; - [ ] [FEAT] - Some text here
+      value: |
+        - [ ] [FEAT] - <insert some required function/feature of the product here>
+    validations:
+      required: true
+  - type: input
+    id: business-intake-dependencies
+    attributes:
+      label: ⛔ Dependencies
+      description: Is there an issue that needs to be completed before this can start? Inset the URL link to the issue below.
+      placeholder: https//github.com/PHACDataHub/project-intake/issues/<number>
+    validations:
+      required: false
