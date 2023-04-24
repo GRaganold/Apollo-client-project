@@ -1,7 +1,7 @@
 ---
 name: User Story
 about: Basic fields required for a User Story
-title: '[US] - '
+title: "[US] - "
 labels: '👨‍💻 Type: User Story'
 assignees: ''
 
