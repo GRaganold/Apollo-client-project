@@ -22,16 +22,11 @@ body:
       description: What milestone will this product help advance or be an output from?
       multiple: false
       options:
-        - M1 - Establish a governance Secretariat
-        - M2 - Develop Strategic Plan
-        - M3 - Engage Digital ID Lab and Digital Governance Council
-        - M4 - Develop a Cloud Adoption Framework
-        - M5 - Deploy an interoperability (API) platform
-        - M6 - Define a technology engagement framework
-        - M7 - Implementation of an identity-based (Zero-Trust) security model
-        - M8 - Deploy PBMM-ready Cloud Infrastructure for Public Health Intelligence (CIPHI)
-        - M9 - Deliver data mesh recommendations
-        - M10 - Provide PHAC-designed production-ready data analytics capabilities
+        - M1 - Milestone 1
+        - M2 - Milestone 2
+        - M3 - Milestone 3 
+        - M4 - Milestone 4
+        - M5 - Milestone 5
         - N/A
     validations:
       required: true
