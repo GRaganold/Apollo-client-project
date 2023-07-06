@@ -1,0 +1,31 @@
+version: "3.6"
+
+services:
+    db:
+    image: postgres
+    stop_signal: SIGTERM
+    # https://docs.docker.com/compose/compose-file/compose-file-v2/#stop_grace_period
+    stop_grace_period: 20s
+    ports:
+      - '5432'
+    env_file:
+      - ./database/database.env
+    graphql-hasura:
+    image: hasura/graphql-engine:v2.20.0
+    ports:
+    - "8080:8080"
+    env_file:
+      ./graphql-hasura/graphql-hasura.env
+    depends_on:
+    - db
+  frontend:
+    stdin_open: true
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile.dev
+    ports:
+      - "3000:3000"
+    volumes:
+      - "./frontend/:/app"
+    depends_on:
+      - db
