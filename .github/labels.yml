@@ -1,0 +1,28 @@
+name: Repository Labels
+description: Predefined labels for organizing issues and pull requests
+
+labels:
+  - name: ":compass: Type: Pillar"
+    description: "High level item to track projects to main capacities"
+    color: "D4C5F9"
+  - name: ":crown: Type: Tech Component"
+    description: "Piece of Technology developed or offered through DE"
+    color: "d93f0b"
+  - name: ":crown: Type: WorkItem"
+    description: "A Product that will advance or be a result of completing a Pillar"
+    color: "F9D0C4"
+  - name: ":no_entry: Type: Human Resources"
+    description: "Human Resource Items"
+    color: "B60205"
+  - name: ":package: Type: Deliverable"
+    description: "A breakdown of the WorkItem"
+    color: "C5DEF5"
+  - name: ":rocket: Type: Feature"
+    description: "Description of the Deliverables"
+    color: "FEF2C0"
+  - name: ":runner: Ongoing Operation"
+    description: "Used for Ongoing Operations that will likely not be closed or completed"
+    color: "75948E"
+  - name: "SUSAN"
+    description: "TBD"
+    color: "BDF456"
